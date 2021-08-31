@@ -134,7 +134,7 @@ public class main {
                     System.out.print("Semester: ");
                     int semester = CustomException.inputInt();
                     System.out.print("University Name: ");
-                    String universityName = CustomException.inputName();
+                    String universityName = CustomException.inputString();
 
                     Employee intern = new Intern(id, fullName, birthDay, phone, email, "Intern", listCertificate, major, universityName,
                             semester);
