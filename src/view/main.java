@@ -163,29 +163,29 @@ public class main {
             if (controller.findByID(id) == "Experience") {
                 System.out.print("So nam kinh nghiem: ");
                 int expInYear = CustomException.inputInt();
-                System.out.print("Ky nang chuyen mon: ");
+                System.out.print("Skill: ");
                 String proSkill = CustomException.inputString();
 
                 Employee exp = new Experience(id, fullName, birthDay, phone, email, "Experience", listCertificate, expInYear,
                         proSkill);
                 return exp;
             } else if (controller.findByID(id) == "Fresher") {
-                System.out.print("Thoi gian tot nghiep: ");
+                System.out.print("Graduation Date: ");
                 Date graduationDate = CustomException.inputBirthDay();
-                System.out.print("Xep loai tot nghiep: ");
+                System.out.print("Granduation Rank: ");
                 String graduationRank = CustomException.inputString();
-                System.out.print("Truong tot nghiep: ");
+                System.out.print("Education: ");
                 String education = CustomException.inputString();
 
                 Employee fresher = new Fresher(id, fullName, birthDay, phone, email, "Fresher", listCertificate, graduationDate,
                         graduationRank, education);
                 return fresher;
             } else if (controller.findByID(id) == "Intern") {
-                System.out.print("Chuyen nganh dang hoc: ");
+                System.out.print("Major: ");
                 String major = CustomException.inputString();
-                System.out.print("Hoc ki dang hoc: ");
+                System.out.print("Semester: ");
                 int semester = CustomException.inputInt();
-                System.out.print("Ten truong dang hoc: ");
+                System.out.print("University Name: ");
                 String universityName = CustomException.inputString();
 
                 Employee intern = new Intern(id, fullName, birthDay, phone, email, "Intern", listCertificate, major, universityName,
